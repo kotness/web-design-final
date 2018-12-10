@@ -1,0 +1,563 @@
+    * {
+        font-family: 'Bodoni', serif;
+        margin: 0px;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      h3 {
+        font-size: 1.4em;
+      }
+      h1 {
+        font-size: 8em;
+        color: #F15C6A;
+      }
+      a {
+        font-size: 1.2em;
+      }
+      h5  {
+        font-size: 1.2em;
+      }
+      h2  {
+        font-size: 3em;
+        color: #F15C6A;
+      }
+
+
+      @font-face {
+    font-family: 'Bodoni';
+    src: url("BodoniSvtyTwoICTT-Book.eot");
+    src: 
+    url("BodoniSvtyTwoITCTT-Book.woff") format("woff"),
+    url("BodoniSvtyTwoITCTT-Book.ttf") format("truetype"),
+    url("BodoniSvtyTwoITCTT-Book.svg") format("svg");
+    }
+      
+      .navigationbar {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+      }
+      .upper {
+        grid-column: 2/10;
+        grid-row: 2/2;
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .lower {
+        grid-column: 2/9;
+        grid-row: 3/3;
+        display: flex;
+        border-bottom: 1px solid black;
+      }
+      navigationbar div h3 {
+        padding-left: 50px;
+        font-size: 1.4em;
+      }
+      .theprogram {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+      }
+      .feature {
+        grid-column: 1/8;
+        grid-row: 1/7;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .headline {
+        grid-column: 7/13;
+        grid-row: 2/4;
+      }
+      .headlinecopy {
+        grid-column: 7/13;
+        grid-row: 5/5;
+      }
+      .groupone {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 100px;
+      }
+      .whatisvcd {
+        grid-column: 3/7;
+        grid-row: 1/2;
+      }
+      .para1 {
+        grid-column:3/7;
+        grid-row:2/4;
+      }
+      .para2 {
+        grid-column: 8/13;
+        grid-row: 2/4;
+      }
+      .likewhatyousee {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: 100px;
+      }
+      .imagelikewhatyousee {
+        grid-column: 6/15;
+        grid-row: 1/5;
+      }
+      .likewhathead {
+        grid-column: 3/9;
+        grid-row: 2/4;
+      }
+      .likewhatbutton {
+        grid-column: 3/5;
+        grid-row: 4/5;
+        text-align: center; 
+        background-color: slategray; 
+        color: white;
+      }
+      .requiredcourses {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: 100px
+      }
+      .reqcourses {
+        grid-column: 3/9;
+        grid-row: 1/2;
+      }
+      .reqcredits {
+        grid-column: 3/9;
+        grid-row: 2/3;
+      }
+      .r1 {
+        grid-column: 3/5;
+        grid-row: 3/4:
+      }
+      .r2 {
+        grid-column: 7/9;
+        grid-row: 3/4;
+      }
+      .r3 {
+        grid-column: 3/5;
+        grid-row: 4/5;
+      }
+      .r4 {
+        grid-column: 3/5;
+        grid-row: 5/6
+      }
+      .r5 {
+        grid-column: 3/5;
+        grid-row: 6/7;
+      }
+      .r6 {
+        grid-column: 3/5;
+        grid-row: 7/8;
+      }
+      .r7 {
+        grid-column: 3/5;
+        grid-row: 8/9;
+      }
+      .r8 {
+        grid-column: 7/9;
+        grid-row: 4/5; 
+      }
+      .r9 {
+        grid-column: 7/9;
+        grid-row: 5/6; 
+      }
+      .r10 {
+        grid-column: 7/9;
+        grid-row: 6/7;
+      }
+      .r11 {
+        grid-column: 7/9;
+        grid-row: 8/7;
+      }
+      .r12 {
+        grid-column: 7/9;
+        grid-row: 8/9;
+      }
+      .support {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        margin-top: 100px;
+      }
+      .supportimage {
+        grid-column: 1/9;
+        grid-row: 2/8
+      }
+      .supporthead {
+        grid-column: 7/12;
+        grid-row: 1/2;
+      }
+      .supportcredits {
+        grid-column: 7/12;
+        grid-row: 2/3;
+      }
+      .s1 {
+        grid-column: 8/12;
+        grid-row: 3/4; 
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .s2 {
+        grid-column: 8/12;
+        grid-row: 4/5;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .s3 {
+        grid-column: 8/12;
+        grid-row: 5/6;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .s4 {
+        grid-column: 8/12;
+        grid-row: 6/7;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .elective {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: 100px;
+      }
+      .elcourses {
+        grid-column: 3/9;
+        grid-row: 1/2;
+      }
+      .elcredits {
+        grid-column: 3/9;
+        grid-row: 2/3;
+      }
+      .e1 {
+        grid-column: 3/5; 
+        grid-row: 3/4;
+      }
+      .e2 {
+        grid-column: 7/9;
+        grid-row: 3/4;
+      }
+      .e3 {
+        grid-column: 3/5; 
+        grid-row: 4/5;
+      }
+      .e4 {
+        grid-column: 3/5;
+        grid-row: 5/6;
+      }
+      .e5 {
+        grid-column: 3/5;
+        grid-row: 6/7;
+      }
+      .e6 {
+        grid-column: 3/5;
+        grid-row: 7/8;
+      }
+      .e7 {
+        grid-column: 3/5;
+        grid-row: 8/9;
+      }
+      .e8 {
+        grid-column: 7/9;
+        grid-row: 4/5;
+      }
+      .e9 {
+        grid-column: 7/9;
+        grid-row: 5/6;
+      }
+      .e10 {
+        grid-column: 7/9;
+        grid-row: 6/7;
+      }
+      .other {
+        grid-column: 7/9;
+        grid-row: 7/8;
+      }
+      .ux {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: 100px;
+      }
+      .uximage {
+        grid-column: 1/9;
+        grid-row: 2/9;
+      }
+      .uxhead {
+        grid-column: 7/12;
+        grid-row: 1/2;
+      }
+      .uxcredits {
+        grid-column: 7/12;
+        grid-row: 2/3;
+      }
+      .ux1 {
+        grid-column: 8/12;
+        grid-row: 3/4;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .ux2 {
+        grid-column: 8/12;
+        grid-row: 4/5;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .ux3 {
+        grid-column: 8/12;
+        grid-row: 5/6;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .ux4 {
+        grid-column: 8/12;
+        grid-row: 6/7;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .ux5 {
+        grid-column: 8/12;
+        grid-row: 7/8;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .ux6 {
+        grid-column: 8/12;
+        grid-row: 8/9;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .bfaprogram {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 100px;
+      }
+      .bfaimage {
+        grid-column: 5/15;
+        grid-row: 1/5;
+      }
+      .bfahead {
+        grid-column: 3/9;
+        grid-row: 1/2;
+      }
+      .bfabutton {
+        grid-column: 3/5;
+        grid-row: 3/4;
+      }
+      .bfabody {
+        grid-column: 3/9;
+        grid-row: 2/3;
+      }
+      .bfarequired {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        margin-top: 100px;
+      }
+      .bfareqcourses {
+        grid-column: 3/9;
+        grid-row: 1/2; 
+      }
+      .bfareqcredits {
+        grid-column: 3/9;
+        grid-row: 2/3;
+      }
+      .b1 {
+        grid-column: 3/5;
+        grid-row: 3/4;
+      }
+      .b2 {
+        grid-column: 7/9;
+        grid-row: 3/4;
+      }
+      .b3 {
+        grid-column: 3/5;
+        grid-row: 4/5;
+      }
+      .b4 {
+        grid-column: 3/5;
+        grid-row: 5/6;
+      }
+      .b5 {
+        grid-column: 3/5;
+        grid-row; 6/7;
+      }
+      .b6 {
+        grid-column: 3/5;
+        grid-row: 7/8;
+      }
+      .b7 {
+        grid-column: 3/5;
+        grid-row: 8/9;
+      }
+      .b8 {
+        grid-column: 7/9;
+        grid-row: 4/5;
+      }
+      .b9 {
+        grid-column: 7/9;
+        grid-row: 5/6;
+      }
+      .b10 {
+        grid-column: 7/9;
+        grid-row: 6/7;
+      }
+      .b11 {
+        grid-column: 7/9;
+        grid-row: 7/8;
+      }
+      .b12 {
+        grid-column: 7/9;
+        grid-row: 8/9;
+      }
+      .b13 {
+        grid-column: 7/9;
+        grid-row: 9/10;
+      }
+      .b14 {
+        grid-column: 7/9;
+        grid-row: 10/11;
+      }
+      .b15 {
+        grid-column: 7/9;
+        grid-row: 11/12;
+      }
+      .b16 {
+        grid-column: 7/9;
+        grid-row: 12/13;
+      }
+      .b17 {
+        grid-column: 7/9;
+        grid-row: 13/14;
+      }
+      .b18 {
+        grid-column: 7/9;
+        grid-row: 14/15;
+      }
+      .b19{
+        grid-column: 3/5;
+        grid-row: 9/10;
+      }
+      .b20 {
+        grid-column: 3/5;
+        grid-row: 10/11;
+      }
+      .b21 {
+        grid-column: 3/5;
+        grid-row:11/12;
+      }
+      .b22 {
+        grid-column: 3/5;
+        grid-row: 12/13;
+      }
+      .b23 {
+        grid-column: 3/5;
+        grid-row: 13/14;
+      }
+      .b24  {
+        grid-column: 3/5;
+        grid-row: 14/15;
+      }
+      .thestaff {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 100px;
+      }
+      .staffphoto {
+        grid-column: 6/15;
+        grid-row: 1/4;
+      }
+      .staffhead {
+        grid-column: 3/9; 
+        grid-row: 2/3;
+      }
+      .profleft {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin-top: 100px;
+      }
+      .profleftimage {
+        grid-column: 2/9; 
+        grid-row: 1/7;
+        width: 100%;
+        height: auto;
+      }
+      .proflefthead {
+        grid-column: 7/12;
+        grid-row: 2/3;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .profleft1 {
+        grid-column: 7/12;
+        grid-row: 3/4; 
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .profleft2 {
+        grid-column: 7/12;
+        grid-row: 4/5;
+        background-color: #D7E4E7; opacity: 0.7;   
+      }
+      .profleft3 {
+        grid-column: 7/12;
+        grid-row: 5/6;
+        background-color: #D7E4E7; opacity: 0.7; 
+      }
+      .profright {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin-top: 100px;
+      }
+
+      .profrightimage {
+        grid-column: 7/14;
+        grid-row: 1/7;
+    
+        width: 100%;
+        height: auto;
+      }
+      .profrighthead {
+        grid-column: 4/9;
+        grid-row: 2/3;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .profright1 {
+        grid-column: 4/9;
+        grid-row: 3/4;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .profright2 {
+        grid-column: 4/9;
+        grid-row: 4/5;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      .profright3 {
+        grid-column: 4/9;
+        grid-row: 5/6;
+        background-color: #D7E4E7; opacity: 0.7;
+      }
+      footer {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        background-color: lightgrey;
+        margin-top: 100px;
+      }
+      footer img {
+        height: 200px;
+        grid-column: 2/6;
+        grid-row: 2/6;
+      }
+      .linkhome {
+        grid-column:12/13;
+        grid-row: 2/3;
+      }
+      .linkprogram {
+        grid-column: 12/13;
+        grid-row: 3/4;
+      }
+      .linkstudentwork {
+        grid-column: 12/13;
+        grid-row: 4/5;
+      }
+      .linkthevcdc {
+        grid-column: 12/13;
+        grid-row: 5/6;
+      }
+      
